@@ -18,13 +18,12 @@ namespace SalesWebMvc.Data
 
         public void Seed()
         {
-            //if (_context.Department.Any() ||
-              //  _context.Vendedor.Any ||
-                //_context.Vendas.Any())
-
-            //{
-            //    return; //DB has been seeded
-            //}
+            if (_context.Department.Any() ||
+                _context.Vendedor.Any() ||
+                _context.Vendas.Any())
+            {
+                return; // DB has been seeded
+            }
 
             Department d1 = new Department(1, "Moda");
             Department d2 = new Department(2, "Cosméticos");
